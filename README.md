@@ -6,13 +6,13 @@ By Jamie Jiang
 #### Git vs GitHub
 
 ---
-#### One-time setup
+#### Initial Setup
 
 ---
-#### Repo setup
+#### Repository Setup
 
 --- 
-#### Ongoing workflow & Commands
+#### Workflow & Commands
 
 ---
-#### Rolling back changes
+#### Rolling Back Changes
