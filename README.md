@@ -18,7 +18,8 @@ This setup is **only** done once in the beginning when the user log into their [
 Follow the following direction to setup your IDE:
 
 1. Configuring your user info
- * In your command line, type the following: `git config --global user.email "you@example.com"`
+   * In your command line, type the following: `git config --global user.email "you@example.com"`
+   * Remember to use **YOUR** email address, and you need the quote around your email.
 
 ---
 #### Repository Setup
