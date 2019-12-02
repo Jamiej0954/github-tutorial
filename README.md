@@ -56,6 +56,15 @@ The key's randomart image is:
    * `ssh -T git@github.com`
    * Type `yes`, press `ENTER`, and you should see:
 > Hi "username"! You've successfully authenticated, but GitHub does not provide shell access.
+3. Enabling Preview
+  * In the top-left corner of the IDE, click **CS50 IDE** > Preferences
+  * When the new window opens, on the LEFT side, click **User Settings**
+  * On the **RIGHT** side, toggle **Enable Preview** to **ON**
+  * You're done!
+     * This means that in the future, you will be able to right-click on a file (i.e. HTML or Markdown) and click **Preview**
+     * On a Mac, if you have a mouse with no right-click, hold `CONTROL` then click
+     * Tip 1: Drag the new tab that appeared to the right side of your IDE (_similar to the image below_)
+     
 
 > SSH key is a better option than HTML because it doesn't need the user to enter their password of their GitHub account everytime the user made a change and wanted to push the change to the remote repo. Whereas the HTML requires the user to enter their password everytime the user push their change for security purposes.
 
