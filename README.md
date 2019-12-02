@@ -69,6 +69,12 @@ The key's randomart image is:
 
 ---
 #### Repository Setup
+To create a local repository, you need to do the following:
+1. cd into a folder where you want your repo to live in
+2. Type `mkdir "The name of the directories"` to create a empty directories (You don't need the quote around the filename)
+3. Type `touch README.md` to create a file within the empty directories
+> Make sure that when you namae your file, there's no space between. Instead of a space, use dash.
+4. Type `git init` to initialize git, so that the git command can run in the local repo (You have initialize the git when you see `(master)` )
 
 --- 
 #### Workflow & Commands
