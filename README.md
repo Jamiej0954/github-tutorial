@@ -2,13 +2,13 @@
 
 _By Jamie Jiang_
 
---- 
+---
 #### Git vs GitHub
 
 Git is a **version control** that allow you to keep track of your source code history.
 > Version control is the management of changes to documents, computer programs, web sites, etc.
 
-GitHub is the service of project that uses Git to function. It's cloud-based hosting service that lets you manage Git **repositories** . In other words, it's a good platform to do collaboration projects. 
+GitHub is the service of project that uses Git to function. It's cloud-based hosting service that lets you manage Git **repositories** . In other words, it's a good platform to do collaboration projects.
 > Repositories or “repo” for short, is a storage location.
 
 ---
@@ -37,7 +37,7 @@ The key's randomart image is:
 |           . o   |
 |            o.   |
 +-----------------+
-``` 
+```
    * `eval "$(ssh-agent -s)"` starts the agent in the background
    * `ls -al ~/.ssh` you should now see a file named `id_rsa.pub`
    * `cat ~/.ssh/id_rsa.pub` then copy all of the result to your clipboard (it should start with ssh-rsa and end with your email address)
@@ -126,3 +126,15 @@ Let say you accidently made a mistake when you:
 
 ---
 #### Collaboration
+`git clone`- Obtains a repository from the remote server and copies it onto local server using the SSH key.
+If the user wanted to clone someone else repo, it will look like:
+`git clone SSH url from other user` in their command line
+
+Forking - Copies a repository and branches it off of the original allowing you to clone then make changes that can be saved.
+   * The save changes will then be transfer to the original user and the user can sumbit a pull request to the original user to pull in the changes that they made.
+
+> The option between clone and forking is within the repo of the other user. Either option will require you to choose between SSH and HTML.
+
+**Cloning a repository that isn't yours won't allow you to push any changes you made to the remote repo.**
+
+`git pull`- Takes all the changes that are made from the remote repository onto the local repository and this usually happen when two or more people are working on the same file. Each person will contribute and the others will need to pull in the changes into their local repo.
