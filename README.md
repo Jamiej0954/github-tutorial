@@ -92,6 +92,8 @@ git push -u origin master
 ```
 > It should inculde your GitHub user name and the name of the repo.
 
+The git remote command is essentially an interface for managing a list of remote entries that are stored in the repository.
+
 ---
 #### Workflow & Commands
 
