@@ -107,3 +107,12 @@ _Look at the Initial setup section to read the explaination of each type of comm
 
 ---
 #### Rolling Back Changes
+Let say you accidently made a mistake when you:
+1. Edit the wrong file
+> Solution: Type `git checkout filename`. (Replace the filename with the actual name of the file). This help to undo the change you made to the file.
+2. Adding something unwanted onto the stage
+> Solution: Type `git reset HEAD`. This remove the item off the stage.
+3. Made a wrong commit
+> Solution: Type `git log` to see the history of the changes you made. Find the commit that you wanted to undo. It will be follow by a long string of letter and number (the serial number). You'll need that serial number to revert the commit that you made. Type `git revert serial#` and this will undo the commit.
+   * To leave the `git log` screen, press "q" on the keyboard.
+
