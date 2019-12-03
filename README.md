@@ -96,6 +96,14 @@ The git remote command is essentially an interface for managing a list of remote
 
 ---
 #### Workflow & Commands
+- When constantly updating your file within the repo, it should always be a habit to check the status to see any untrack changes that has been made to the file. To do this you type `git status` to see the status of the directories and repo that you're in. If the status contain any red text, it means that it has identify a file that have untrack and have change.
+- When this occur you need to add it to the stage by typing `git add .` to stage all changes that you have made.
+- After the staging, you would commit the change (`git commit -m "Message`)
+- Finally, you need to push the change to your remote repo by typing `git push`
+> You have already made the bridge between the local and remote repo, so when you push the change, it will show up in your remote repo.
+   * Use `git remote -v` to see where the changes of your file is push to.
+
+_Look at the Initial setup section to read the explaination of each type of command_
 
 ---
 #### Rolling Back Changes
