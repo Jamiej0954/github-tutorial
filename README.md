@@ -116,3 +116,13 @@ Let say you accidently made a mistake when you:
 > Solution: Type `git log` to see the history of the changes you made. Find the commit that you wanted to undo. It will be follow by a long string of letter and number (the serial number). You'll need that serial number to revert the commit that you made. Type `git revert serial#` and this will undo the commit.
    * To leave the `git log` screen, press "q" on the keyboard.
 
+---
+#### Error handling
+Let say you accidently made a mistake when you:
+1. Initialize git in the wrong directory
+> Solution: Type `rm -rf .git`. This will delete the git init within the directory.
+2. Create a unecessary repo in local and remote
+> Solution: To remove repo from local you can use `rm -rf repo-name` to delete the repo. Or you can choose to delete the entire directory. To delete the entire directory, you go to a level above the dircetory that you want to remove and use `rm -rf directory name`. To remove repo from remote, there's a trash bin icon and you click into the file to delete the file. If you want to delete the entire repo, you can go to setting within your repo and scroll all the way down until you see `Delete this Repo` (For the first time it will ask for your GitHub password, but later on it will delete with asking the user for password)
+
+---
+#### Collaboration
