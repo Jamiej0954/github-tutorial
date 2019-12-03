@@ -73,10 +73,26 @@ To create a local repository, you need to do the following:
 1. cd into a folder where you want your repo to live in
 2. Type `mkdir "The name of the directories"` to create a empty directories (You don't need the quote around the filename)
 3. Type `touch README.md` to create a file within the empty directories
-> Make sure that when you namae your file, there's no space between. Instead of a space, use dash.
-4. Type `git init` to initialize git, so that the git command can run in the local repo (You have initialize the git when you see `(master)` )
+> Make sure that when you name your file, there's no space between. Instead of a space, use dash.
+4. Type `git init` to initialize git, so that the git command can run in the local repo (You have initialize the git when you see `(master)` next to the directories that you are working on)
+5. Next you want to go into the README.md file. Here you can type anything into the file (Type `c9 README.md` to open file)
+6. Once you have type in any text into the file, you need a way to save the change you made to the file. To do this, you use `git add .` to select **Everything** you change and wanted to save.
+> `git add .` add everything you change to the stage. Once something is stage, it's ready to be save. It's sort of selecting what you wanted to save before doing so. If you do not want to save all the change you made and want to select file manually, you can type `git add "filename"` and this will select individual item to be put on stage.
+7. Once you stage a file you would want to save the change for future use and to do this, you use `git commit -m "Enter message here`
+> `git commit -m "message"` is the save as saving a snapshot of the change and the message following the commit state what is change. The message needs to be in present tense and be detailed. A bad example of commit message will be "Create stuff". A good example would be "Create a empty repo".
+8. Next you would want to go to your Github account to create a repo that's remote.
+> A **Remote repo** is versions of your project that are hosted on the Internet or network somewhere.
+   * Once your in your GitHub account, in the top right corner, there's a plus sign. Click on that and you will have the drop down option. Select **New Respository**
+   * Next you need to name the respository in the remote exactly the same name as the repo in your local. Then you will need to click create repository.
+   * Then at the top of your screen there will be a option between HTML and SSH. Make sure to select the SSH.
+9. Finally, you would want to create a bridge between your local and remote repo. To do so, type the following into the command line:
+```
+git remote add origin git@github.com:Jamiej0954/example.git
+git push -u origin master
+```
+> It should inculde your GitHub user name and the name of the repo.
 
---- 
+---
 #### Workflow & Commands
 
 ---
